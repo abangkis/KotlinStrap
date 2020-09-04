@@ -13,6 +13,7 @@ fun Application.homeRoute(log: Logger) {
     routing {
         get("/home") {
             call.respondWithBootstrap()
+//            call.respondWithHome()
         }
     }
 }
