@@ -24,12 +24,12 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 type = "image/x-icon"
                 href = "assets/img/favicon.ico"
             }
-            +"""<!-- Font Awesome icons (free version)-->"""
+            unsafe { +"""<!-- Font Awesome icons (free version)-->""" }
             script {
                 src = "https://use.fontawesome.com/releases/v5.13.0/js/all.js"
 //                crossorigin = "anonymous"
             }
-            +"""<!-- Google fonts-->"""
+            unsafe { +"""<!-- Google fonts-->""" }
             link {
                 href = "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
                 rel = "stylesheet"
@@ -40,7 +40,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 rel = "stylesheet"
                 type = "text/css"
             }
-            +"""<!-- Core theme CSS (includes Bootstrap)-->"""
+            unsafe { +"""<!-- Core theme CSS (includes Bootstrap)-->""" }
             link {
                 href = "css/styles.css"
                 rel = "stylesheet"
@@ -48,7 +48,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
         }
         body {
             id = "page-top"
-            +"""<!-- Navigation-->"""
+            unsafe { +"""<!-- Navigation-->""" }
             nav("navbar navbar-expand-lg navbar-dark bg-primary fixed-top") {
                 id = "sideNav"
                 a(classes = "navbar-brand js-scroll-trigger") {
@@ -113,9 +113,9 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                     }
                 }
             }
-            +"""<!-- Page Content-->"""
+            unsafe { +"""<!-- Page Content-->""" }
             div("container-fluid p-0") {
-                +"""<!-- About-->"""
+                unsafe { +"""<!-- About-->""" }
                 section("resume-section") {
                     id = "about"
                     div("resume-section-content") {
@@ -157,7 +157,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 }
                 hr("m-0") {
                 }
-                +"""<!-- Experience-->"""
+                unsafe { +"""<!-- Experience-->""" }
                 section("resume-section") {
                     id = "experience"
                     div("resume-section-content") {
@@ -206,7 +206,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 }
                 hr("m-0") {
                 }
-                +"""<!-- Education-->"""
+                unsafe { +"""<!-- Education-->""" }
                 section("resume-section") {
                     id = "education"
                     div("resume-section-content") {
@@ -236,7 +236,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 }
                 hr("m-0") {
                 }
-                +"""<!-- Skills-->"""
+                unsafe { +"""<!-- Skills-->""" }
                 section("resume-section") {
                     id = "skills"
                     div("resume-section-content") {
@@ -327,7 +327,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 }
                 hr("m-0") {
                 }
-                +"""<!-- Interests-->"""
+                unsafe { +"""<!-- Interests-->""" }
                 section("resume-section") {
                     id = "interests"
                     div("resume-section-content") {
@@ -338,7 +338,7 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                 }
                 hr("m-0") {
                 }
-                +"""<!-- Awards-->"""
+                unsafe { +"""<!-- Awards-->""" }
                 section("resume-section") {
                     id = "awards"
                     div("resume-section-content") {
@@ -407,18 +407,18 @@ suspend fun ApplicationCall.respondWithBootstrap() {
                     }
                 }
             }
-            +"""<!-- Bootstrap core JS-->"""
+            unsafe { +"""<!-- Bootstrap core JS-->""" }
             script {
                 src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
             }
             script {
                 src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
             }
-            +"""<!-- Third party plugin JS-->"""
+            unsafe { +"""<!-- Third party plugin JS-->""" }
             script {
                 src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
             }
-            +"""<!-- Core theme JS-->"""
+            unsafe { +"""<!-- Core theme JS-->""" }
             script {
                 src = "js/scripts.js"
             }

@@ -37,6 +37,12 @@ fun Application.module(testing: Boolean = false) {
         static("/css") {
             resources("css")
         }
+        static("/js") {
+            resources("js")
+        }
+        static("/assets") {
+            resources("assets")
+        }
 
         get("/json/gson") {
             call.respond(mapOf("hello" to "world"))
